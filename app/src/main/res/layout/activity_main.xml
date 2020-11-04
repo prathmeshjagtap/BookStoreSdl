@@ -4,15 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E8E8E8"
     tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/BookLogo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="TODO"
+        android:src="@mipmap/libraryapplogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/AppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Store SDL"
+        android:layout_marginTop="16dp"
+        android:text="MyBook"
+        android:textColor="#E91E2F"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/BookLogo"
+        app:layout_constraintStart_toStartOf="@+id/BookLogo"
+        app:layout_constraintTop_toBottomOf="@+id/BookLogo"
+        />
+
+    <Button
+        android:id="@+id/AllBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="All Books"
+        app:layout_constraintEnd_toEndOf="@+id/AppName"
+        app:layout_constraintTop_toBottomOf="@+id/AppName" />
+
+    <Button
+        android:id="@+id/Novels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Novels"
+        app:layout_constraintEnd_toEndOf="@+id/AllBooks"
+        app:layout_constraintStart_toStartOf="@+id/AllBooks"
+        app:layout_constraintTop_toBottomOf="@+id/AllBooks" />
+
+    <Button
+        android:id="@+id/StoryBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Story books"
+        app:layout_constraintEnd_toEndOf="@+id/Novels"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/Novels"
+        app:layout_constraintTop_toBottomOf="@+id/Novels" />
+
+    <Button
+        android:id="@+id/StudyBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Study books"
+        app:layout_constraintEnd_toEndOf="@+id/StoryBooks"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/StoryBooks"
+        app:layout_constraintTop_toBottomOf="@+id/StoryBooks" />
+
+    <Button
+        android:id="@+id/About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="About"
+        android:textColor="#100F10"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        style="?attr/materialButtonOutlinedStyle"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
