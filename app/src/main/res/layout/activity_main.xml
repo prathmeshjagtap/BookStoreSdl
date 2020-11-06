@@ -35,57 +35,58 @@
 
     <Button
         android:id="@+id/AllBooks"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:text="All Books"
         app:layout_constraintEnd_toEndOf="@+id/AppName"
+        app:layout_constraintStart_toStartOf="@+id/AppName"
         app:layout_constraintTop_toBottomOf="@+id/AppName" />
 
     <Button
         android:id="@+id/Novels"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Novels"
         app:layout_constraintEnd_toEndOf="@+id/AllBooks"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/AllBooks"
         app:layout_constraintTop_toBottomOf="@+id/AllBooks" />
 
     <Button
-        android:id="@+id/StoryBooks"
-        android:layout_width="wrap_content"
+        android:id="@+id/Manga"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Story books"
+        android:layout_marginTop="16dp"
+        android:text="Manga"
         app:layout_constraintEnd_toEndOf="@+id/Novels"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/Novels"
         app:layout_constraintTop_toBottomOf="@+id/Novels" />
 
     <Button
         android:id="@+id/StudyBooks"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Study books"
-        app:layout_constraintEnd_toEndOf="@+id/StoryBooks"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/StoryBooks"
-        app:layout_constraintTop_toBottomOf="@+id/StoryBooks" />
+        app:layout_constraintEnd_toEndOf="@+id/Manga"
+        app:layout_constraintStart_toStartOf="@+id/Manga"
+        app:layout_constraintTop_toBottomOf="@+id/Manga" />
 
     <Button
         android:id="@+id/About"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="30dp"
         android:text="About"
-        android:textColor="#100F10"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/StudyBooks"
         app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        style="?attr/materialButtonOutlinedStyle"
-        />
+        app:layout_constraintStart_toStartOf="@+id/StudyBooks"
+        app:layout_constraintTop_toBottomOf="@+id/StudyBooks" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

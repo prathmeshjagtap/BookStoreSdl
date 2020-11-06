@@ -2,31 +2,39 @@
 package com.example.bookstoresdl;
 
         import androidx.appcompat.app.AppCompatActivity;
+        import androidx.recyclerview.widget.RecyclerView;
 
+        import android.content.Intent;
         import android.os.Bundle;
+        import android.view.View;
         import android.widget.Button;
 
-        import com.example.bookstoresdl.R;
-
-        import java.security.PrivateKey;
-
 public class MainActivity extends AppCompatActivity {
-    private Button allbooks,novels,storybooks,studybooks,about;
+
+    private Button btnAllBooks, btnNovels, btnManga, btnStudyBooks, btnAbout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initialize();
+
+        btnManga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MangaActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initialize() {
-        allbooks = findViewById(R.id.AllBooks);
-        novels = findViewById(R.id.Novels);
-        storybooks = findViewById(R.id.StoryBooks);
-        studybooks = findViewById(R.id.StudyBooks);
-        about = findViewById(R.id.About);
-
+        btnAllBooks = findViewById(R.id.AllBooks);
+        btnNovels = findViewById(R.id.Novels);
+        btnManga = findViewById(R.id.Manga);
+        btnStudyBooks = findViewById(R.id.StudyBooks);
+        btnAbout = findViewById(R.id.About);
     }
 }
 

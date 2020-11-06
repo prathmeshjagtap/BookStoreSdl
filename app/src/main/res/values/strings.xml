@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Book Store Sdl</string>
+
+    <string-array name="manga_names">
+        <item>OnePiece</item>
+        <item>AttackOnTitan</item>
+        <item>OnePunch</item>
+        <item>SoloLeveling</item>
+        <item>DemonSlayer</item>
+        <item>Haikyu!!</item>
+    </string-array>
 </resources>
